@@ -4,7 +4,7 @@
   "description": "GitHub Action to build and deploy your Gatsby site to GitHub Pages ❤️🎩",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc --noEmit && ncc build index.ts -o dist -m",
+    "build": "tsc && ncc build index.ts -o dist -m",
     "test": "tsc --noEmit && jest --silent",
     "lint": "eslint . --ext .ts"
   },
@@ -17,7 +17,7 @@
     "GitHub Pages",
     "GitHub Actions"
   ],
-  "author": "Enrique Gonzalez",
+  "author": "Enrique Gonzalez, Doug Phung",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/enriikke/gatsby-gh-pages-action/issues"
@@ -35,7 +35,7 @@
     "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^4.0.0",
     "@typescript-eslint/types": "^4.0.0",
-    "@vercel/ncc": "^0.28.5",
+    "@vercel/ncc": "^0.36.0",
     "eslint": "^7.0.0",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
