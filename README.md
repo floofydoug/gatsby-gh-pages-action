@@ -1,4 +1,4 @@
-# Gatsby Publish
+# Gatsby Publish on node V16
 
 GitHub Action to build and deploy your Gatsby site to GitHub Pages ❤️🎩
 
