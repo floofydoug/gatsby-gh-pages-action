@@ -1,4 +1,4 @@
-# Gatsby Publish on node V16
+# Gatsby Publish on node V18
 
 GitHub Action to build and deploy your Gatsby site to GitHub Pages ❤️🎩
 
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: floofydoug/gatsby-gh-pages-action@v1
+      - uses: floofydoug/gatsby-gh-pages-action@v3
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
 ```
@@ -113,7 +113,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: floofydoug/gatsby-gh-pages-action@v1
+      - uses: floofydoug/gatsby-gh-pages-action@v3
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
@@ -135,7 +135,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      - uses: floofydoug/gatsby-gh-pages-action@v1
+      - uses: floofydoug/gatsby-gh-pages-action@v3
         with:
           access-token: ${{ secrets.ACCESS_TOKEN }}
           deploy-branch: gh-pages
